@@ -1,5 +1,6 @@
 /home/cacassiano/Área de Trabalho/VsCode/javinha/projetos/crudDeAlunos/src/main/java/dev/cacassiano/crudDeAlunos/CrudDeAlunosApplication.java
-/home/cacassiano/Área de Trabalho/VsCode/javinha/projetos/crudDeAlunos/src/main/java/dev/cacassiano/crudDeAlunos/controller/AlunoController.java
+/home/cacassiano/Área de Trabalho/VsCode/javinha/projetos/crudDeAlunos/src/main/java/dev/cacassiano/crudDeAlunos/controller/AlunosController.java
+/home/cacassiano/Área de Trabalho/VsCode/javinha/projetos/crudDeAlunos/src/main/java/dev/cacassiano/crudDeAlunos/controller/HomeController.java
 /home/cacassiano/Área de Trabalho/VsCode/javinha/projetos/crudDeAlunos/src/main/java/dev/cacassiano/crudDeAlunos/controller/service/AlunoReqDTO.java
 /home/cacassiano/Área de Trabalho/VsCode/javinha/projetos/crudDeAlunos/src/main/java/dev/cacassiano/crudDeAlunos/controller/service/AlunoRespDTO.java
 /home/cacassiano/Área de Trabalho/VsCode/javinha/projetos/crudDeAlunos/src/main/java/dev/cacassiano/crudDeAlunos/entity/Aluno.java

@@ -1,7 +1,5 @@
 dev/cacassiano/crudDeAlunos/repository/AlunoRepository.class
-application.properties
 dev/cacassiano/crudDeAlunos/CrudDeAlunosApplication.class
 dev/cacassiano/crudDeAlunos/controller/service/AlunoReqDTO.class
 dev/cacassiano/crudDeAlunos/entity/Aluno.class
 dev/cacassiano/crudDeAlunos/controller/service/AlunoRespDTO.class
-dev/cacassiano/crudDeAlunos/controller/AlunoController.class
