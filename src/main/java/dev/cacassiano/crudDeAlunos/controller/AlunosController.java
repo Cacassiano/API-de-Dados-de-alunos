@@ -32,21 +32,29 @@ public class AlunosController
     }
 
     @PostMapping
-    public void addAluno(@RequestBody AlunoReqDTO body)
+    public String addAluno(@RequestBody AlunoReqDTO body)
     {
         Aluno nAluno = new Aluno(body);
         repository.save(nAluno);
+        return "aluno "+nAluno.getNome()+" Adicionado";
     }
 
     @DeleteMapping
     public String delAluno(@RequestBody AlunoReqDTO body)
     {
         if(repository.existsById(body.id())){
+            Aluno aluno = repository.getReferenceById(body.id());
             repository.deleteById(body.id());
-            return "aluno "+body.nome()+"deletado";
+            return "aluno "+aluno.getNome()+" deletado";
         }
         return "aluno não existe";
     } 
+        @PostMapping("/delete")
+        public String delByPost(@RequestBody AlunoReqDTO body)
+        {
+            return delAluno(body);
+        }
+
 
     @PutMapping
     public String updAluno(@RequestBody AlunoReqDTO body)
@@ -62,8 +70,7 @@ public class AlunosController
         nAluno.setNome(body.nome());
         
         repository.save(nAluno);
-        AlunoRespDTO alunoDTO = new AlunoRespDTO(nAluno);
-        return alunoDTO.toString();
+        return "Atualização bem sucedida";
     }
     
     @PutMapping("list")
